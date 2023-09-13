@@ -1,0 +1,75 @@
+@import "external.scss";
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    color: #fff;
+    padding: 100px;
+
+    & .calculator {
+        width: 100%;
+        max-width: 600px;
+        margin-left: 10%;
+        margin-top: 10%;
+
+        & h1 {
+            font-size: 60px;
+
+            & span {
+                color: #ffff66;
+            }
+        }
+
+        & .input-box {
+            margin: 40px o;
+            padding: 35px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.3);
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            & input {
+                flex: 1;
+                margin-right: 20px;
+                padding: 14px 20px;
+                border: 0;
+                outline: 0;
+                font-size: 18px;
+                border-radius: 5px;
+            }
+
+            & .icon {
+                color: black;
+                position: absolute;
+                align-self: center;
+                right: 35%;
+                cursor: pointer;
+            }
+
+            & button {
+                background-color: #ffff76;
+                border: 0;
+                outline: 0;
+                padding: 15px 30px;
+                border-radius: 5px;
+                font-weight: 500;
+                color: #333;
+                cursor: pointer;
+            }
+        }
+    }
+
+    & h3 span {
+        color: aqua;
+    }
+
+    & .pasive {
+        display: none;
+    }
+
+    & .active {
+        display: block;
+    }
+
+}
